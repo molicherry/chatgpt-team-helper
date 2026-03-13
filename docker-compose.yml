@@ -10,7 +10,7 @@ services:
       - "5173" # 前端 Web 端口（API 通过 nginx 代理，无需暴露 3000）
     volumes:
       # 持久化数据库文件
-      - team—data:/app/backend/db
+      - teamdata:/app/backend/db
     env_file:
       - ./backend/.env
     environment:
@@ -32,4 +32,4 @@ networks:
 
 # 可选：定义卷
 volumes:
-  team—data:
+  teamdata:
