@@ -11,8 +11,8 @@ services:
     volumes:
       # 持久化数据库文件
       - teamdata:/app/backend/db
-    env_file:
-      - ./backend/.env
+    #env_file:
+    #  - ./backend/.env
     environment:
       TZ: ${TZ:-Asia/Shanghai}
       NODE_ENV: ${NODE_ENV:-production}
